@@ -1,0 +1,14 @@
+# Ignore model archives and duplicate models
+*.7z*
+cat_dog_model.h5
+# Ignore large image datasets
+*.jpg
+samples/
+# Python cache
+__pycache__/
+*.pyc
+# VSCode / PyCharm / OS files
+.vscode/
+.idea/
+.DS_Store
+*.h5 filter=lfs diff=lfs merge=lfs -text

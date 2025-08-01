@@ -1,0 +1,11 @@
+*.h5
+*.jpg
+*.png
+*.csv
+*.zip
+*.7z
+__pycache__/
+*.pyc
+.DS_Store
+.idea/
+.vscode/

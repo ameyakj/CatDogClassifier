@@ -1,8 +1,9 @@
 import os
 import gdown
+import streamlit as st
 
 MODEL_PATH = "cat_dog_classifier.h5"
-FILE_ID = "1rpV6VOh_pXkfQgk2ih6hZqksYKe8Bt71?"  # replace this with your actual file ID
+FILE_ID = "1rpV6VOh_pXkfQgk2ih6hZqksYKe8Bt71"  # replace this with your actual file ID
 URL = f"https://drive.google.com/uc?id={FILE_ID}"
 
 # Auto-download if model not present
@@ -10,7 +11,7 @@ if not os.path.exists(MODEL_PATH):
     with st.spinner("Downloading model..."):
         gdown.download(URL, MODEL_PATH, quiet=False)
 
-import streamlit as st
+
 from PIL import Image
 import numpy as np
 from tensorflow.keras.models import load_model
